@@ -1,0 +1,125 @@
+/* Desktop Layout */
+body{
+  font-size: 1.4rem;
+}
+.container{
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.appHeader, .menu__list ,.appMain{
+  /* width: 1000px;  */
+  /* 1280 해상도를 기준으로 디자인 */
+  width: 78.125%;
+  max-width: 1800px;
+}
+
+/* 헤더 */
+.appHeader{
+  position: relative;
+  padding-bottom: 1em;
+  min-height: 60px;
+}
+/* 로고 */
+.brand{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -30px;
+}
+/* 멤버 서비스 */
+.memberOnly{
+  text-align: right;
+  font-size: 0;
+  margin-right: -14px;
+}
+.memberOnly li{
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+/* 검색 폼 */
+.searchForm{
+  text-align: right;
+}
+[type="search"], .buttonSearch{
+  vertical-align: middle;
+}
+[type="search"]{
+  width: 400px;
+}
+.buttonSearch{
+  background: #988574;
+  color: #fff;
+  height: 35px;
+}
+.appNavigation, .appFooter{
+  width: 100%;
+}
+/* 메인 메뉴 */
+.menu{
+  background: #988574;
+}
+.buttonBurger{
+  display: none;
+}
+.menu__list{
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+/* .menu__item{
+  float: left;
+  margin: 0 22px;
+} */
+.menu__link{
+  cursor: default;
+  text-shadow: 1px 0 0 rgba(0,0,0,0.85), 0 1px 0 rgba(0,0,0,0.85), -1px 0 0 rgba(0,0,0,0.85), 0 -1px 0 rgba(0,0,0,0.85);
+}
+.menu__link:hover, .menu__link:focus{
+  color: inherit
+}
+.menu__subMenu{
+  padding-left: 1.5em;
+}
+.menu__subMenu a{
+  display: block;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+}
+.menu__subMenu a:hover, .menu__subMenu a:focus{
+  color: #ff0;
+}
+.appMain{ 
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.book{
+  /* width: 320px; */
+  width: 32%;
+}
+.news{
+  /* width: 660px; */
+  width: 66%;
+}
+.board{
+  /* width: 320px; */
+  width: 32%;
+}
+.favorite{
+  order: 1;
+  /* width: 240px; */
+  width: 24%;
+}
+.twitter{
+  /* width: 400px; */
+  width: 40%;
+}
+/* 푸터 */
+.appFooter{
+  text-align: center;
+}
