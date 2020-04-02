@@ -297,14 +297,14 @@ legend,
   height: 35px;
   border-radius: 3px;
 }
-.appMain[class*="__title"] {
+.appMain [class*="__title"] {
   font-size: 1.8rem;
   padding-top: .5em;
 }
-.appMain[class*="__enTitle"] {
+.appMain [class*="__enTitle"] {
   display: block;
 }
-.appMain[class*="__summary"] {
+.appMain [class*="__summary"] {
   line-height: 1.5;
 }
 .book__cover {
@@ -324,7 +324,7 @@ legend,
 .book__info dd {
   margin-left: 0;
 }
-.book__info[aria-label] {
+.book__info [aria-label] {
   display: block;
   font-size: 2.5rem;
 }
