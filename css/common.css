@@ -1,4 +1,10 @@
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+
+*::before,
+*::before{
+box-sizing: border-box;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -199,3 +205,43 @@ legend,
     padding: 0;
     background: transparent;
   }
+
+/* 공통 레이아웃 */
+
+.container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.appFooter{
+    width: 100%;
+}
+
+.memberOnly {
+    /* background-color: yellow; */
+    /* position: absolute; */
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end; */
+}
+
+/* 공통 헤더 */
+.appHeader{
+background-color: silver;
+}
+
+.memberOnly {
+    /* background-color: yellow; */
+}
+
+/* 공통 네비게이션 */
+.appNavigation{
+    background-color: purple;
+}
+.appMain{
+    background-color: lime;
+}
+.appFooter{
+    background-color: orange;
+}

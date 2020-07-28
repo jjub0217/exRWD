@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>반응형 - 웹카페</title>
+    <!-- <link rel="stylesheet" href="/css/device.css"> -->
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/small.css" media="(min-width: 320px) and (max-width: 999px)">
+    <link rel="stylesheet" href="/css/small.css" media="screen and (min-width: 320px) and (max-width: 999px)">
     <!-- └> 320px 보다 작으면 이 css 적용안된다.(320까지는 이 css 적용할거다): 320px 보다 작은건 없다는 전제하에.   -->
-    <link rel="stylesheet" href="/css/large.css" media="(min-width: 1000px)">
+    <link rel="stylesheet" href="/css/large.css" media="screen and (min-width: 1000px)">
     <!-- 1000 까지는 이 css 적용한다. -->
     <!-- 적절한 breakpoint 로 끊는게 좋다. 너무 세세하게 나눠놓는게 좋진 않다. -->
 
@@ -36,6 +37,9 @@
                 </fieldset>
             </form>
         </header>
+        <nav class="appNavigation">네비게이션</nav>
+        <main class="appMain">메인 콘텐츠</main>
+        <footer class="appFooter">푸터</footer>
     </div>
 </body>
 

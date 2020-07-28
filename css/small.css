@@ -1,0 +1,43 @@
+/* 모바일 기본 글자 크기 */
+body{
+    font-size: 1.5rem;
+    background-color: pink;
+}
+
+/* 모바일 레이아웃 */
+
+
+.appHeader,
+.appMain{
+width: 100%;
+} 
+
+
+
+/* 모바일 헤더 */
+.appHeader{
+    /* background-color: silver; */
+    /* position: relative; */
+}
+
+.memberOnly {
+    /* background-color: yellow; */
+}
+
+/* 모바일 네비게이션 */
+.appNavigation{
+    position: fixed; /* 수직으로 스크롤이 되어도 뷰포트 고정시켜야 한다.*/
+    top: 0;
+    left: 0;
+    width: 70vw; /*vw : view-port*/
+    height: 100vh; /*vh : view-height*/
+    /* ┌ text-indent: -9999px; 
+       │ display: none; <- 애니메이션 적용하기에는 안좋은 속성*/
+    transform: translateX(-100%);
+}
+.appMain{
+    /* background-color: lime; */
+}
+.appFooter{
+    /* background-color: orange; */
+}
