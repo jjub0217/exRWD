@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>반응형 - 웹카페</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/small.css" media="(min-width: 320px) and (max-width: 999px)">
+    <!-- └> 320px 보다 작으면 이 css 적용안된다.(320까지는 이 css 적용할거다): 320px 보다 작은건 없다는 전제하에.   -->
+    <link rel="stylesheet" href="/css/large.css" media="(min-width: 1000px)">
+    <!-- 1000 까지는 이 css 적용한다. -->
+    <!-- 적절한 breakpoint 로 끊는게 좋다. 너무 세세하게 나눠놓는게 좋진 않다. -->
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="appHeader">
+            <h1 class="brand resetMargin">
+                <a href="index.html">
+                    <img src="./images/rwd-logo.png" alt="Web Cafe">
+                </a>
+            </h1>
+            <ul class="memberOnly resetList">
+                <li><a href="/">로그인</a></li>
+                <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">회원가입</a></li>
+                <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">커뮤니티</a></li>
+            </ul>
+            <h2 class="a11yHidden">검색</h2>
+            <form action="https://formspree.io/xyyzgpvy" method="POST" class="searchForm">
+                <fieldset class="resetBox">
+                    <legend>검색</legend>
+                    <input type="search" required placeholder="검색어를 입력하세요." name="search" aria-label="검색어">
+                    <button type="submit" class="button buttonSearch">검색</button>
+                </fieldset>
+            </form>
+        </header>
+    </div>
 </body>
+
 </html>
