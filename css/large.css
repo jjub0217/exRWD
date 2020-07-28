@@ -20,13 +20,39 @@ body{
 
 /* 데스크탑 헤더 */
 .appHeader{
+    grid-template: repeat(2, 50%)/ repeat(2, 1fr);
+    align-items: center;
+   
     /* background-color: silver; */
 }
+
+/* 데스크탑 브랜드 */
+.brand{
+    grid-area: 1 / 1 / 3 /2;
+}
+
+
+/* 데스크탑 멤버링크 */
+.memberOnly{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/* 데스크탑 검색 폼 */
+.searchForm{
+    background-color: lime;
+    text-align: right;
+    grid-area: 2/2/3/3;
+}
+
+
 
 /* 데스크탑 네비게이션 */
 .appNavigation{
     /* background-color: purple; */
     width: 100%;
+
+
+  
 }
 .appMain{
     /* background-color: lime; */

@@ -218,30 +218,39 @@ legend,
     width: 100%;
 }
 
-.memberOnly {
-    /* background-color: yellow; */
-    /* position: absolute; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-end; */
-}
 
 /* 공통 헤더 */
 .appHeader{
-background-color: silver;
+    background-color: silver;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    /* order: -1; */
+    
+    display: grid;
+
 }
 
+/* 공통 멤버링크 */
 .memberOnly {
     /* background-color: yellow; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+
 }
 
 /* 공통 네비게이션 */
 .appNavigation{
     background-color: purple;
+
 }
 .appMain{
     background-color: lime;
+
 }
 .appFooter{
     background-color: orange;
+
 }
