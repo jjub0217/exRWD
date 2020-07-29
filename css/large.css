@@ -137,7 +137,7 @@ height: 35px;
     /* ┌ grid-row: 1 / 2;
        │ grid-column: 1 / 5; */
     grid-area: 1/1/2/span 4;
-}
+}   
 
 /* 데스크탑 새소식 */
 .news{
