@@ -196,7 +196,7 @@ input[type="search"]{
 }
 .isAct .positionBottom{
     top: 50%;
-    transform: translateY(-50%) rotate(-50deg);
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 
