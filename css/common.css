@@ -256,7 +256,7 @@ input[type="search"]{
 
 /* 공통 네비게이션 */
 .appNavigation{
-    background-color: purple;
+    /* background-color: purple; */
 
 }
 .appMain{

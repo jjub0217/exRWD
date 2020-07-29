@@ -51,8 +51,6 @@ width: 100%;
 }
 
 /* 모바일 검색 폼 */
-.searchForm{
-}
 
 
 input[type="search"]{
@@ -105,7 +103,23 @@ input[type="search"]{
 }
 
 /* 모바일 네비게이션 */
+/*.appNavigation{
+    position: fixed;  수직으로 스크롤이 되어도 뷰포트 고정시켜야 한다.
+    top: 0;
+    left: 0;
+    width: 70vw; /*vw : view-port
+    height: 100vh; /*vh : view-height*/
+    /* ┌ text-indent: -9999px; 
+       │ display: none; <- 애니메이션 적용하기에는 안좋은 속성
+    transform: translateX(-100%);
+}*/
+
 .appNavigation{
+    /* position: relative; */
+}
+
+
+.menu__list{
     position: fixed; /* 수직으로 스크롤이 되어도 뷰포트 고정시켜야 한다.*/
     top: 0;
     left: 0;
@@ -115,9 +129,116 @@ input[type="search"]{
        │ display: none; <- 애니메이션 적용하기에는 안좋은 속성*/
     transform: translateX(-100%);
 }
-.appMain{
-    /* background-color: lime; */
+
+
+
+
+/* 모바일 메뉴 제어 버튼*/
+.buttonBurger{
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    /* background-color: transparent; */
+    /* border: 0; */
+    
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+
+    overflow: hidden;
 }
+
+
+.burgerBar{
+    background-color: #fff;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 20%;
+
+    transition: all 200ms ease-in-out;
+}
+
+.round{
+    border-radius: 20px;
+}
+
+.positionTop{
+    top: 0;
+    /* height: 1px; */
+    /* background-color: #fff;*/
+    /* transform: skewX(60deg); */
+    /* transform: translateY(-50%); */
+}
+
+.positionMiddle{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.positionBottom{
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+
+
+
+
+.isAct .positionTop{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.isAct .positionMiddle{
+    transform: translateY(-50%) translateX(-100%);
+}
+.isAct .positionBottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+}
+
+
+
+
+/* 모바일 메인 콘텐츠 */
+.appMain{
+    background-color: lime;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.book,
+.news,
+.board,
+.favorite,
+.twitter{
+    height: 10vh;
+    width: 100%;
+}
+
+
+.book{
+    background-color: skyblue;
+    
+}
+.news{
+    background-color: pink;
+}
+.board{
+    background-color: lightcoral;
+}
+.favorite{
+    background-color: lightgray;
+}
+.twitter{
+    background-color: lightseagreen;
+}
+
+
+
 .appFooter{
     /* background-color: orange; */
 }
