@@ -212,6 +212,7 @@ legend,
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+    /* display: grid; */
 }
 
 .appFooter{
@@ -221,7 +222,7 @@ legend,
 
 /* 공통 헤더 */
 .appHeader{
-    background-color: silver;
+    /* background-color: silver; */
     /* display: flex; */
     /* flex-wrap: wrap; */
     /* flex-direction: row; */
@@ -239,6 +240,18 @@ legend,
     flex-flow: row nowrap;
     justify-content: flex-end;
 
+}
+.memberOnly .divider{
+  padding: 0 5px;
+}
+
+/* 공통 검색폼 */
+input[type="search"]{
+    /* background-color: red; */
+    height: 35px;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 2px 15px;
 }
 
 /* 공통 네비게이션 */
