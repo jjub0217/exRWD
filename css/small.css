@@ -118,26 +118,11 @@ input[type="search"]{
     /* position: relative; */
 }
 
-
-.menu__list{
-    position: fixed; /* 수직으로 스크롤이 되어도 뷰포트 고정시켜야 한다.*/
-    top: 0;
-    left: 0;
-    width: 70vw; /*vw : view-port*/
-    height: 100vh; /*vh : view-height*/
-    /* ┌ text-indent: -9999px; 
-       │ display: none; <- 애니메이션 적용하기에는 안좋은 속성*/
-    transform: translateX(-100%);
-}
-
-
-
-
 /* 모바일 메뉴 제어 버튼*/
 .buttonBurger{
     width: 35px;
     height: 35px;
-    background-color: blue;
+    /* background-color: blue; */
     /* background-color: transparent; */
     /* border: 0; */
     
@@ -200,6 +185,64 @@ input[type="search"]{
 }
 
 
+
+.menu__list{
+    position: fixed; /*수직으로 스크롤이 되어도 뷰포트 고정시켜야 한다. */
+    /* background-color: yellow; */
+    /* display: flex;
+    flex-flow: column;
+    flex-wrap: wrap; */
+    top: 0;
+    left: 0;
+    width: 70vw; /*vw : view-port*/
+    /* height: 100vh; vh : view-height*/
+    height: 100vh; /*vh : view-height*/
+    /* ┌ text-indent: -9999px; 
+       │ display: none; <- 애니메이션 적용하기에는 안좋은 속성*/
+    
+    transform: translateX(-105%);
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+
+}
+
+.isAct  .menu__list{   /*<- isAct 가 눌리면 menu__list가 나타난다.
+/* position: relative; */
+
+    transform: none;
+}
+/* .menu__item{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+} */
+
+
+.menu__link{
+    font-size: 1.7rem;
+    font-weight: 700;
+    /* display: block; */
+    margin-bottom: 20px;
+    display: inline-block;
+    width: calc(200% - 1.5em);
+}
+.menu__subMenu{
+    width: 100%;
+    font-size: 1.6rem;
+    display: none;
+}
+.menu__subMenu li{
+    margin: 10px 0;
+}
+.menu__subMenu a{
+    display: block;
+    padding: 5px 0;
+}
+.menuAct .menu__subMenu{
+    display: block;
+}
 
 
 /* 모바일 메인 콘텐츠 */
