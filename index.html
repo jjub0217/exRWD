@@ -2,155 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>반응형 - 웹카페</title>
-    <link rel="stylesheet" href="/css/grid.css">
-    <!-- <link rel="stylesheet" href="/css/device.css"> -->
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/small.css" media="screen and (min-width: 320px) and (max-width: 999px)">
-    <!-- └> 320px 보다 작으면 이 css 적용안된다.(320까지는 이 css 적용할거다): 320px 보다 작은건 없다는 전제하에.   -->
-    <link rel="stylesheet" href="/css/large.css" media="screen and (min-width: 1000px)">
-    <!-- 1000 까지는 이 css 적용한다. -->
-    <!-- 적절한 breakpoint 로 끊는게 좋다. 너무 세세하게 나눠놓는게 좋진 않다. -->
-    <script src="/js/grid.js" defer></script>
-    <script src="/js/app.js" defer></script>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>반응형 - 웹카페</title>
+  <link rel="stylesheet" href="/css/grid.css">
+  <!-- <link rel="stylesheet" href="/css/device.css"> -->
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/small.css" media="screen and (min-width: 320px) and (max-width: 999px)">
+  <!-- └> 320px 보다 작으면 이 css 적용안된다.(320까지는 이 css 적용할거다): 320px 보다 작은건 없다는 전제하에.   -->
+  <link rel="stylesheet" href="/css/large.css" media="screen and (min-width: 1000px)">
+  <!-- 1000 까지는 이 css 적용한다. -->
+  <!-- 적절한 breakpoint 로 끊는게 좋다. 너무 세세하게 나눠놓는게 좋진 않다. -->
+  <script src="/js/grid.js" defer></script>
+  <script src="/js/app.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <header class="appHeader">
-            <h1 class="brand resetMargin">
-                <a href="index.html">
-                    <img src="./images/rwd-logo.png" alt="Web Cafe">
-                </a>
-            </h1>
-            <ul class="memberOnly resetList">
-                <li><a href="/">로그인</a></li>
-                <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">회원가입</a></li>
-                <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">커뮤니티</a></li>
-            </ul>
-            <h2 class="a11yHidden">검색</h2>
-            <form action="https://formspree.io/xyyzgpvy" method="POST" class="searchForm">
-                <fieldset class="resetBox">
-                    <legend>검색</legend>
-                    <input type="search" required placeholder="검색어를 입력하세요." name="search" aria-label="검색어">
-                    <button type="submit" class="button buttonSearch" >검색</button>
-                </fieldset>
-            </form>
-        </header>
-        <nav class="appNavigation menu">
-            <h2 class="a11yHidden">메인 메뉴</h2>
-            <button class="buttonNone buttonBurger" aria-label="메뉴 열기">
-              <span class="burgerBar round positionTop"></span>
-              <span class="burgerBar round positionMiddle"></span>
-              <span class="burgerBar round positionBottom"></span>
-            </button>
-            <ul class="menu__list resetList">
-              <li class="menu__item">
-                <a href="#" class="menu__link">HTML에 대해</a>
-                <ul class="menu__subMenu">
-                  <li><a href="#">HTML5 소개</a></li>
-                  <li><a href="#">레퍼런스 소개</a></li>
-                  <li><a href="#">활용 예제</a></li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">CSS에 대해</a>
-                <ul class="menu__subMenu">
-                  <li><a href="#">CSS 소개</a></li>
-                  <li><a href="#">CSS2 VS CSS3</a></li>
-                  <li><a href="#">CSS 애니메이션</a></li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">웹표준/웹접근성</a>
-                <ul class="menu__subMenu">
-                  <li><a href="#">웹표준 이란?</a></li>
-                  <li><a href="#">웹접근성의 개요</a></li>
-                  <li><a href="#">HTML5의 현재와 미래</a></li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">묻고 답하기</a>
-                <ul class="menu__subMenu">
-                  <li><a href="#">묻고 답하기</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">1대1 질문</a></li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">자료실</a>
-                <ul class="menu__subMenu">
-                  <li><a href="#">공개 자료실</a></li>
-                  <li><a href="#">이미지 자료실</a></li>
-                  <li><a href="#">예제 자료실</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <main class="appMain">
-            <section class="book">
-              <h2 class="book__title sprite spriteBook">
-                추천서적<span class="book__enTitle themeGreen">Recommend Book</span>
-              </h2>
-              <figure class="book__cover">
-                <img src="./images/book_rwd.jpg" alt="" class="responsive" aria-labelledby="book__coverCaption">
-                <figcaption id="book__coverCaption">
-                  반응형웹 핵심 가이드북 도서
-                </figcaption>
-              </figure>
-              <dl class="book__info">
-                <dt>저자</dt>
-                <dd>김데레사</dd>
-                <dt class="a11yHidden">평점</dt>
-                <dd class="themeGreen" aria-label="5점 만점에 4점">
-                  <span aria-hidden="true">★★★★☆</span>
-                </dd>
-              </dl>
-              <p class="book__summary">
-                반응형웹 디자인을 위한 핵심 내용을 다루고 있으며 미디어쿼리, 유연한
-                레이아웃, 반응형 이미지 기법을 학습할 수 있다. 모바일 및 다양한
-                해상도에 대응이 가능한 웹디자인을 이 책으로 시작해 보자!
-              </p>
-            </section>
-            <section class="news">
-              <h2 class="news__title sprite spriteNews">
-                새소식 <span class="news__enTitle themeYellow">WebCafe News</span>
-              </h2>
-            </section>
-            <section class="board">
-              <h2 class="board__title sprite spriteBoard">
-                게시판<span class="board__enTitle themeBrown">WebCafe Board</span>
-              </h2>
-            </section>
-            <section class="favorite">
-              <h2 class="favorite__title sprite spriteFavorite">
-                인기 사이트<span class="favorite__enTitle themeOrange">Favorite Site</span>
-              </h2>
-            </section>
-            <article class="twitter">
-              <h2 class="twitter__title sprite spriteTwitter">
-                트위터<span class="twitter__enTitle themeSkyblue">WebCafe Twitter</span>
-              </h2>
-            </article>
-          </main>
-        <footer class="appFooter">푸터</footer>
-    </div>
-    <div class="gridSystem">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+  <div class="container">
+    <header class="appHeader">
+      <h1 class="brand resetMargin">
+        <a href="index.html">
+          <img src="./images/rwd-logo.png" alt="Web Cafe">
+        </a>
+      </h1>
+      <ul class="memberOnly resetList">
+        <li><a href="/">로그인</a></li>
+        <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">회원가입</a></li>
+        <li><span class="divider" aria-hidden="true">ㅣ</span><a href="/">커뮤니티</a></li>
+      </ul>
+      <h2 class="a11yHidden">검색</h2>
+      <form action="https://formspree.io/xyyzgpvy" method="POST" class="searchForm">
+        <fieldset class="resetBox">
+          <legend>검색</legend>
+          <input type="search" required placeholder="검색어를 입력하세요." name="search" aria-label="검색어">
+          <button type="submit" class="button buttonSearch">검색</button>
+        </fieldset>
+      </form>
+    </header>
+    <nav class="appNavigation menu">
+      <h2 class="a11yHidden">메인 메뉴</h2>
+      <button class="buttonNone buttonBurger" aria-label="메뉴 열기">
+        <span class="burgerBar round positionTop"></span>
+        <span class="burgerBar round positionMiddle"></span>
+        <span class="burgerBar round positionBottom"></span>
+      </button>
+      <ul class="menu__list resetList">
+        <li class="menu__item">
+          <a href="#" class="menu__link">HTML에 대해</a>
+          <ul class="menu__subMenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">레퍼런스 소개</a></li>
+            <li><a href="#">활용 예제</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">CSS에 대해</a>
+          <ul class="menu__subMenu">
+            <li><a href="#">CSS 소개</a></li>
+            <li><a href="#">CSS2 VS CSS3</a></li>
+            <li><a href="#">CSS 애니메이션</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">웹표준/웹접근성</a>
+          <ul class="menu__subMenu">
+            <li><a href="#">웹표준 이란?</a></li>
+            <li><a href="#">웹접근성의 개요</a></li>
+            <li><a href="#">HTML5의 현재와 미래</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">묻고 답하기</a>
+          <ul class="menu__subMenu">
+            <li><a href="#">묻고 답하기</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">1대1 질문</a></li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">자료실</a>
+          <ul class="menu__subMenu">
+            <li><a href="#">공개 자료실</a></li>
+            <li><a href="#">이미지 자료실</a></li>
+            <li><a href="#">예제 자료실</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main class="appMain">
+      <section class="book">
+        <h2 class="book__title sprite spriteBook">
+          추천서적<span class="book__enTitle themeGreen">Recommend Book</span>
+        </h2>
+        <figure class="book__cover">
+          <img src="./images/book_rwd.jpg" alt="" class="responsive" aria-labelledby="book__coverCaption">
+          <figcaption id="book__coverCaption">
+            반응형웹 핵심 가이드북 도서
+          </figcaption>
+        </figure>
+        <dl class="book__info">
+          <dt>저자</dt>
+          <dd>김데레사</dd>
+          <dt class="a11yHidden">평점</dt>
+          <dd class="themeGreen" aria-label="5점 만점에 4점">
+            <span aria-hidden="true">★★★★☆</span>
+          </dd>
+        </dl>
+        <p class="book__summary">
+          반응형웹 디자인을 위한 핵심 내용을 다루고 있으며 미디어쿼리, 유연한
+          레이아웃, 반응형 이미지 기법을 학습할 수 있다. 모바일 및 다양한
+          해상도에 대응이 가능한 웹디자인을 이 책으로 시작해 보자!
+        </p>
+      </section>
+      <section class="news">
+        <h2 class="news__title sprite spriteNews">
+          새소식 <span class="news__enTitle themeYellow">WebCafe News</span>
+        </h2>
+        <figure class="news__videoContainer">
+          <video class="news__video responsive" poster="./media/poster.jpg" controls>
+            <source src="./media/stories.mp4" type="video/mp4" />
+            <track src="./media/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
+          </video>
+          <figcaption class="a11yHidden">구글 개발자 이야기</figcaption>
+        </figure>
+        <p class="news__summary">
+          구글플레이는 다양한 분야에서 활약하고 있는 국내 개발사들을 모시고 직접
+          이야기를 나눠보는 ‘구글플레이 개발자와의 대화’ 행사를 정기적으로
+          개최할 예정입니다. 오늘 3월 29일(수) 구글 캠퍼스 서울에서 열린 첫 번째
+          ‘구글플레이 개발자와의 대화’는 ‘해외에서 빵터진 한국 앱'을 주제로
+          진행됐는데요, 국내 앱 시장은 물론 글로벌 시장에서도 주목 받으며 글로벌
+          진출의 본보기가 되고 있는 개발사 세 곳과 함께 했습니다.
+        </p>
+        <time class="news__date icon-calendar" datetime="2020-07-30T14:03:23">
+          2020.07.30
+        </time>
+      </section>
+      <section class="board">
+        <h2 class="board__title sprite spriteBoard">
+          게시판<span class="board__enTitle themeBrown">WebCafe Board</span>
+        </h2>
+      </section>
+      <section class="favorite">
+        <h2 class="favorite__title sprite spriteFavorite">
+          인기 사이트<span class="favorite__enTitle themeOrange">Favorite Site</span>
+        </h2>
+      </section>
+      <article class="twitter">
+        <h2 class="twitter__title sprite spriteTwitter">
+          트위터<span class="twitter__enTitle themeSkyblue">WebCafe Twitter</span>
+        </h2>
+      </article>
+    </main>
+    <footer class="appFooter">푸터</footer>
+  </div>
+  <div class="gridSystem">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </body>
 
 </html>
