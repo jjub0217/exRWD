@@ -15,7 +15,7 @@ function demoWebCafeUI() {
 
   // UI 인터랙션 초기화
   var init = function() {
-    // 문서 객체를 찾아 지역 변수에 참조하는 함수 실행
+    // 문서 객체를 찾아 변수에 참조하는 함수 실행
     findDomNode();
     // 윈도우 너비가 변경되면 처리 될 이벤트 핸들러 연결
     window.addEventListener('resize', handleWindowResize);
@@ -180,7 +180,7 @@ function demoWebCafeUI() {
       // 설정
       item.classList.add('icon-star');
       link.addEventListener('click', handlePreventBrowserAction);
-      link.setAttribute('role', 'presentation');
+      link.setAttribute('role', 'none');
       link.removeAttribute('aria-haspopup');
       link.removeAttribute('aria-pressed');
       link.removeAttribute('aria-expanded');
