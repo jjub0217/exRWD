@@ -271,8 +271,17 @@ legend,
     background: transparent;
   }
 
-/* 공통 레이아웃 */
+/* 공통 반응형 콘텐츠 */
+.responsive{
+  /* background-color: green; */
+  /* display: none; */
+  /* display: inline-block; */
+  max-width: 100%;
+  height: auto;
+}
 
+
+/* 공통 레이아웃 */
 .container{
     display: flex;
     flex-flow: row;
@@ -319,13 +328,147 @@ input[type="search"]{
     padding: 2px 15px;
 }
 
+
 /* 공통 네비게이션 */
 .appNavigation{
-    /* background-color: purple; */
+  /* background-color: purple; */
 
 }
-.appMain{
-    background-color: lime;
+
+
+/* 공통 메인콘텐츠 */
+
+
+/* 공통 메인콘텐츠 섹션 제목, 단락 */
+/* .sprite::before{
+  content: '';
+  display: block;
+  background-image: url(/css/images/sprite_main.png);
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+} */
+
+.sprite{
+  background-image: url(/css/images/sprite_main.png);
+  background-repeat: no-repeat;
+
+}
+.spriteBook{
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+
+.themeGreen{
+  color: rgb(171, 211, 117);
+}
+.themeYellow{
+  color: rgb(232, 202, 88);
+}
+.themeBrown{
+  color: rgb(199, 179, 154);
+}
+.themeOrange{
+  color: rgb(238, 166, 10);
+}
+.themeSkyblue{
+  color: rgb(106, 174, 230)
+}
+
+.appMain [class*="__summary"]{
+  line-height: 1.5;
+}
+
+.appMain [class*="__title"]{
+  /* background-color: red; */
+  margin: 0;
+  align-items: center;
+  min-height: 60px;
+  padding-left: 65px;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.appMain [class*="__enTitle"]{
+  display: block;
+  margin-top: 5px;
+}
+
+
+
+
+/* 공통 추천 서적 */
+
+.book{
+  /* background-color: yellow; */
+
+}
+.book__cover{
+  /* background-color: pink; */
+  margin: 0;
+  margin: 15px 20px;
+  /* margin-top: 12px; */
+  /* margin: 0; */
+  /* text-align: center; */
+  /* margin: 0 20px; */
+}
+
+.book__cover,
+.book__info{
+  text-align: center;
+  /* padding: 0 40px; */
+  font-size: 1.6rem;
+}
+.book__cover figcaption{
+  /* background-color: red; */
+  /* margin: 0; */
+  margin: 10px 0;
+  /* margin-top: 30px 0; */
+}
+
+.book__info {
+  margin: 15px 0;
+}
+
+
+/* ┌ .book__info dt,
+   │ .book__info dd{
+   │ display: inline;
+   │ margin: 0;
+}  ↓*/
+.book__info *{
+  display: inline;
+  /* margin: 0; */
+  margin-left: 0;
+}
+
+
+/* ┌.book__info span{
+   │ display: block;
+   │ margin: 0;
+   │ padding: 0;
+   │ font-size: 2.4rem;
+}  ↓*/
+.book__info dd[aria-label]{
+  display: block;
+}
+
+
+
+
+
+
+.board{
 
 }
 .appFooter{

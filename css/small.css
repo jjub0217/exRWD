@@ -250,7 +250,7 @@ input[type="search"]{
     background-color: lime;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .book,
@@ -258,26 +258,27 @@ input[type="search"]{
 .board,
 .favorite,
 .twitter{
-    height: 10vh;
+    /* height: 10vh; */
     width: 100%;
+    margin: 10px 0;
 }
 
 
 .book{
-    background-color: skyblue;
+    /* background-color: skyblue; */
     
 }
 .news{
-    background-color: pink;
+    /* background-color: pink; */
 }
 .board{
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 .favorite{
-    background-color: lightgray;
+    /* background-color: lightgray; */
 }
 .twitter{
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
 }
 
 
