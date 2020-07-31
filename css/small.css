@@ -247,7 +247,7 @@ input[type="search"]{
 
 /* 모바일 메인 콘텐츠 */
 .appMain{
-    background-color: lime;
+    /* background-color: lime; */
     display: flex;
     flex-wrap: wrap;
     padding: 10px 20px;
