@@ -118,23 +118,23 @@
         <h2 class="news__title sprite spriteNews">
           새소식 <span class="news__enTitle themeYellow">WebCafe News</span>
         </h2>
-        <figure class="news__videoContainer">
+        <!-- <figure class="news__videoContainer">
           <video class="news__video responsive" poster="./media/poster.jpg" controls>
             <source src="./media/stories.mp4" type="video/mp4" />
             <track src="./media/stories-en.vtt" kind="captions" srclang="en" label="English Caption" />
           </video>
           <figcaption class="a11yHidden">구글 개발자 이야기</figcaption>
-        </figure>
-        <!-- <figure class="news__videoContainer">
+        </figure> -->
+        <figure class="news__videoContainer">
           <div class="iframeContainer iframe4To3 iframe16To9 iframe21To9">
             <iframe class="iframe"
             src="https://www.youtube.com/embed/AJqhKWo89FQ" 
             frameborder="0" 
             allowfullscreen></iframe>
           </div>
-        </figure> -->
+        </figure>
         <p class="news__summary">
-          구글플레이는 다양한 분야에서 활약하고 있는 국내 개발사들을 모시고 직접
+          구글플레이는 다양한 분야에서 활약하고   있는 국내 개발사들을 모시고 직접
           이야기를 나눠보는 ‘구글플레이 개발자와의 대화’ 행사를 정기적으로
           개최할 예정입니다. 오늘 3월 29일(수) 구글 캠퍼스 서울에서 열린 첫 번째
           ‘구글플레이 개발자와의 대화’는 ‘해외에서 빵터진 한국 앱'을 주제로
@@ -149,11 +149,60 @@
         <h2 class="board__title sprite spriteBoard">
           게시판<span class="board__enTitle themeBrown">WebCafe Board</span>
         </h2>
+        <ul class="board__list resetList">
+          <li class="icon-star">
+            <a href="#">HTML의 모든 것을 알려주마 샘플 활용법</a>
+            <time datetime="2019-11-27T11:44:30">2019.11.27</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2019-11-27T11:44:30">2019.11.27</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">KWCAG 2.1 소식</a>
+            <time datetime="2019-11-27T11:44:30">2019.11.27</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+            <time datetime="2019-11-27T11:44:30">2019.11.27</time>
+          </li>
+          <li class="icon-star">
+            <a href="#">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+            <time datetime="2019-11-27T11:44:30">2019.11.27</time>
+          </li>
+        </ul>
+        <a href="/" title="게시판" class="board__more"><span class="icon-plus themeBrown"></span>더보기</a>
       </section>
       <section class="favorite">
         <h2 class="favorite__title sprite spriteFavorite">
           인기 사이트<span class="favorite__enTitle themeOrange">Favorite Site</span>
         </h2>
+        <ol class="favorite__list resetList">
+          <li>
+            <a href="http://ko.learnlayout.com/" target="_blank" data-tooltip="레이아웃 학습하기">
+              Learn CSS Layout
+              <span class="icon-link-ext" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://flexboxfroggy.com/#ko" target="_blank" data-tooltip="플랙스 박스 게임">
+              Flexbox Froggy
+              <span class="icon-link-ext" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://cssgridgarden.com/#ko" target="_blank" data-tooltip="그리드 레이아웃 게임.">
+              CSS Grid Garden
+              <span class="icon-link-ext" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.mozilla.org/ko/" target="_blank" data-tooltip="<MDN 래퍼런스.">
+              MDN Web Docs
+              <span class="icon-link-ext" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ol>
       </section>
       <article class="twitter">
         <h2 class="twitter__title sprite spriteTwitter">

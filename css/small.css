@@ -263,7 +263,10 @@ input[type="search"]{
     margin: 10px 0;
 }
 
-
+.favorite__list a:hover::before,
+.favorite__list a:focus::before {
+    left: 10em;
+}
 .book{
     /* background-color: skyblue; */
     

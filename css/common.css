@@ -483,6 +483,12 @@ video.responsive{
 
 /* 공통 새소식 - iframe */
 
+/* iframe 도 부모 요소에 맞게 같이 늘어나야 한다. */
+/* iframe{
+  width: 100%;
+  height: auto;
+} */
+
 .iframeContainer{
   /* background-color: blue; */
   position: relative;
@@ -501,7 +507,7 @@ video.responsive{
 .iframe21To9{
   /* 9/21% */
   /* 0.42857142857142855 */
-  padding-top: 42.85%;
+  padding-top: 42.857142857142855%;
 }
 .iframe{
   /* background-color: yellow; */
@@ -519,18 +525,135 @@ video.responsive{
   margin: 1em 0;
 }
 
-/* iframe 도 부모 요소에 맞게 같이 늘어나야 한다. */
-/* iframe{
-  width: 100%;
-  height: auto;
-} */
-
-
+/* 공통 게시판 */
 
 
 .board{
+  /* background-color: yellow; */
+  position: relative;
+  margin-top: 15px 0;
+  overflow: hidden;
+}
+
+.board__list li{
+  padding-left: 20px;
+  display: flex;
+  margin: 15px 0;
+  /* line-height: 32px; */
+  /* vertical-align: middle; */
+  /* flex-wrap: wrap;
+  flex-flow: column; */
+  /* align-content: space-around; */
+  /* justify-content: space-around; */
+
+
 
 }
+
+.board__list  a,
+.board__list::before{
+  /* flex-grow: 1; */
+  
+}
+
+
+.board__list  a {
+  flex-grow: 1;
+  /* flex-grow: 9; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.board__list time{
+  /* flex-grow: 1; */
+  /* text-align: right; */
+}
+
+.board__more{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+
+
+
+
+
+
+/* 공통 인기 사이트 */
+
+.favorite__title{
+  margin-bottom: 20px;
+}
+
+.favorite__list{
+  /* background-color: yellow; */
+  margin: 15px 0;
+  padding-left: 20px;
+
+}
+.favorite__list li{
+  counter-increment: number;
+  /* padding-left: 20px; */
+  margin-top: 10px; 
+
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.favorite__list li::before{
+  content: counter(number);
+  color: #fff;
+  background-color: #eea60a;
+  /* display: inline-block; */
+  margin-right: 5px;
+  /* padding: 2px 6px; */
+  border-radius: 50%;
+
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 30px;
+} 
+
+
+.favorite__list a{
+  position: relative;
+  flex-grow: 1;
+}
+
+/*
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip);
+  position: relative;
+  background-color: orange;
+  color: #fff;
+  border: 1px solid #aaa;
+  box-shadow: 2px 2px 0 #000;
+  padding: 5px 10px;
+
+  /* display: block; *//*
+}*/
+
+.favorite__list a:hover::before,
+.favorite__list a:focus::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 1em;
+
+  background-color: orange;
+  border: 1px solid #aaa;
+  padding: 5px;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px  0 0 #000;
+}
+  /* display: block; *//*
+
 
 /* 공통 푸터 */
 .appFooter{

@@ -14,7 +14,14 @@ body{
 .appHeader,
 .appMain,
 .menu__list{
-    width: 1000px;
+    width: 78.125%;
+    min-width: 1000px;
+    max-width: 1800px;
+
+
+    /* width: 1000px; */
+    /* min-width: 1000px; */
+    /* width: 100%; */
     /* min-width: 1000px;
     max-width: 1800px; */
     /* margin: 0 auto; */
@@ -173,7 +180,20 @@ height: 35px;
        │ grid-column: 9 / 13; */
        grid-area: 2/10/3/span 3;
 }
+.favorite__list a:hover::before,
+.favorite__list a:focus::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 1em;
+  right: -10px;
 
+  background-color: orange;
+  border: 1px solid #aaa;
+  padding: 5px;
+  z-index: 100;
+  color: #fff;
+  box-shadow: 2px 2px  0 0 #000;
+}
 .twitter{
     /* background-color: violet; */
     /* height: 10vh; */
