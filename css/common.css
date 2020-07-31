@@ -466,6 +466,64 @@ input[type="search"]{
 }
 
 
+/* 공통 새소식 */
+
+video.responsive{
+  width: 100%;
+}
+.news{
+  margin: 0;
+  padding: 0;
+  /* background-color: pink; */
+}
+
+.news__videoContainer{
+  margin: 15px 10px;
+}
+
+/* 공통 새소식 - iframe */
+
+.iframeContainer{
+  /* background-color: blue; */
+  position: relative;
+  /* padding-top: 56.25%; */
+
+  width: 100%;
+  height: 0 !important;
+
+}
+.iframe4To3{
+  padding-top: 75%;
+}
+.iframe16To9{
+  padding-top: 56.25%;
+}
+.iframe21To9{
+  /* 9/21% */
+  /* 0.42857142857142855 */
+  padding-top: 42.85%;
+}
+.iframe{
+  /* background-color: yellow; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news__date {
+  /* background-color: blue; */
+  display: block;
+  text-align: right;
+  margin: 1em 0;
+}
+
+/* iframe 도 부모 요소에 맞게 같이 늘어나야 한다. */
+/* iframe{
+  width: 100%;
+  height: auto;
+} */
 
 
 
@@ -473,6 +531,8 @@ input[type="search"]{
 .board{
 
 }
+
+/* 공통 푸터 */
 .appFooter{
     background-color: orange;
 

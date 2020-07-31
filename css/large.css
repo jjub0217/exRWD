@@ -19,6 +19,7 @@ body{
     max-width: 1800px; */
     /* margin: 0 auto; */
     
+    /* width: 78.125%; */
 }
 
 /* 데스크탑 헤더 */
@@ -150,6 +151,9 @@ height: 35px;
        │ grid-column: 5 / 13; */
     grid-area: 1/5/2/span 8;
 }
+
+
+
 
 /* 데스크탑 게시판 */
 .board{
