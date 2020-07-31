@@ -267,6 +267,30 @@ input[type="search"]{
 .favorite__list a:focus::before {
     left: 10em;
 }
+
+
+/* 모바일 트위터 */
+
+.twitter__userProfile{
+    text-align: right;
+}
+
+.address {
+
+}
+/* 모바일 푸터 */
+.appFooter{
+    line-height: 2;
+}
+
+.address span{
+    display: block;
+}
+
+
+
+
+
 .book{
     /* background-color: skyblue; */
     

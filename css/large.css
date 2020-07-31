@@ -203,7 +203,11 @@ height: 35px;
     grid-area: 2/5/3/span 5;
 }
 
+/* 데스크탑 푸터 */
 
 .appFooter{
+    text-align: center;
+    /* line-height: 2; */
     /* background-color: orange; */
 }
+
